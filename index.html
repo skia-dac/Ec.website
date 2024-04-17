@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+</head>
+
+<body>
+ 
+
+  <header>
+    <div class="head_container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="image/logo.png" alt="">
+        </div>
+        <nav>
+          <ul id="menuitem">
+            <li><a href="#">Home</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#Services">Services</a></li> 
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </nav>
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
+
+        <div class="account">
+          <a href="#product"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "600px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 50);
+    })
+  </script>
+
+  <section class="home">
+    <div class="head_container">
+      <div class="owl-carousel owl-theme">
+        <div class="slide">
+          <div class="slide-content flex">
+            <div class="left top">
+              <h3>Telephone</h3>
+              <h1>NEW IPHONE</h1>
+              <p> Experience the epitome of innovation with iPhones at iPhone Cameroon. From sleek designs to cutting-edge features, each device redefines excellence. Elevate your mobile lifestyle – discover the future in your hands. </p>
+              <a href="https://wa.me/680461618" target="_blank">
+                <button class="btn1">SHOP NOW</button>
+              </a>
+            </div>
+            <div class="right">
+              <img src="image/slide1.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content flex">
+            <div class="right">
+              <img src="image/p5.jpg" alt="">
+            </div>
+            <div class="left top">
+              <h3>Apple Accessories</h3>
+              <h1>New AIRPOD</h1>
+              <p>Enhance your iPhone experience with premium accessories at iPhone Cameroon. From stylish cases to cutting-edge gadgets, discover the perfect complement to your device. Elevate your style and functionality – shop our curated selection now!</p>
+              <a href="https://wa.me/680461618" target="_blank">
+                <button class="btn1">SHOP NOW</button>
+              </a>
+              
+              
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="slide-content flex">
+            <div class="left top">
+              <h3>COMPUTER</h3>
+              <h1>MACBOOK</h1>
+              <p>Dive into productivity and creativity with MacBooks at iPhone Cameroon. Unleash your potential with sleek design, powerful performance, and seamless integration. Elevate your work and play – explore our collection today! </p>
+              <a href="https://wa.me/680461618" target="_blank">
+                <button class="btn1">SHOP NOW</button>
+              </a>
+            </div>
+            <div class="right">
+              <img src="image/mp.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- Custom Javascript -->
+  <script>
+    $(document).ready(function() {
+      $(".owl-carousel").owlCarousel({
+        items: 1,
+        loop: true,
+        nav: false,
+        dots: true,
+        autoplay: false,
+      });
+    });
+  </script>
+
+
+
+
+
+  <section class="offer ">
+    <div class="container  center">
+      <div class="content flex  ">
+        <div class="box flex">
+          <div class="text">
+            <p>The Latest arrival</p>
+            <h3>One Step <span>Pairing</span> </h3>
+            <button class="btn2">SHOP NOW</button>
+
+            <div class="bottom_text">
+              <p><span>STEAL</span> OF</p>
+              <p>THE <span>STEAL</span></p>
+            </div>
+          </div>
+          <div class="img">
+            <img src="image/o1.png" alt="">
+          </div>
+        </div>
+        <div class="box box2 flex">
+          <div class="img">
+            <img src="image/o2.png" alt="">
+          </div>
+          <div class="text">
+            <div class="text_top">
+              <p>SALE UP TO <label>30%</label> </p>
+            </div>
+            <p>The Latest arrival</p>
+            <h3>One Step <span>Pairing</span> </h3>
+            <button class="btn2">SHOP NOW</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="about">
+    <div class="container flex top">
+      <div class="left">
+        <img src="image/personne.jpg" alt="">
+      </div>
+      <div class="right">
+        <div class="heading">
+          <h3>THE PRODUCTS</h3>
+          <h2>Great Promotions</h2>
+        </div>
+        <div class="text">
+          <p></p>
+          <ul class="list grid">
+            <li>IPHONE XR </li>
+            <li>IPHONE 11 </li>
+            <li>IPHONE X </li>
+            <li>IPHONE 12 </li>
+          </ul>
+          <a href="https://wa.me/680461618" target="_blank">
+            <button>SHOP NOW</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+  <section class="time">
+    <div class="container flex mtop">
+      <div class="left mtop">
+        <h2>Best Deal Of the Month </h2>
+        <p>Selecting your article and placing an order via WhatsApp </p>
+        <h1>64GB</h1>
+        <button>
+          <a href="https://wa.me/680461618" target="_blank">WhatsApp</a>
+        </button>
+        
+      </div>
+      <div class="right">
+        <img src="image/iphone-xr-2018.png" alt="">
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id= "product" class="product mtop">
+    <div class="container">
+      <div class="heading heading2">
+        <h3>THE LASTEST</h3>
+        <h2>IPHONE CM PRODUCTS</h2>
+      </div>
+
+      
+
+
+  <section class="brand">
+    <div class="container">
+      <div class="owl-carousel owl-carousel3 owl-theme mtop">
+        <div class="item">
+          <div class="img">
+            <img src="image/iph.png" alt="">
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/MacBook_logo.png" alt="">
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/ar.png" alt="">
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/ch.png" alt="">
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img src="image/bw.png" alt="">
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+
+  </section>
+
+
+
+  <section class="product mtop">
+    <div class="container">
+      <div class="heading heading2">
+        <h3>THE LASTEST</h3>
+        <h2>IPHONE</h2>
+      </div>
+
+      <div class="content mtop grid">
+        <div class="box">
+          <div class="img">
+            
+            <img src="image/iphone/15pro.jpg">
+            <img src="image/iphone/14c.jpg" class="upper-image">
+          </div>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="text">
+            <h3>IPHONE 15</h3>
+            <p> <span>1300.000FCFA</span> 1200.000FCFA</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/iphone/14.jpg">
+            <img src="image/iphone/14c.jpg" class="upper-image">
+          </div>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="text">
+            <h3>IPHONE 14</h3>
+            <p> <span>580.000FCFA</span> 550.000FCFA</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/iphone/13.jpg">
+            <img src="image/iphone/13c.jpg" class="upper-image">
+          </div>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="text">
+            <h3>IPHONE 13</h3>
+            <p> <span>380000FCFA </span> 299.000FCFA</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/iphone/11.jpg">
+         
+          </div>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="text">
+            <h3>IPHONE 11</h3>
+            <p> <span>180.000FCFA</span> 155.000FCFA</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/iphone/12pro.jpg">
+         
+          </div>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="text">
+            <h3>IPHONE 11 Pro</h3>
+            <p> <span>250.000FCFA</span> 220.000FCFA</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/12p.jpg">
+           
+          </div>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="text">
+            <h3>IPHONE 12 Pro</h3>
+            <p>span>380.000FCFA</span> 320.000FCFA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product mtop">
+    <div class="container">
+      <div class="heading heading2">
+        <h3>THE LASTEST</h3>
+        <h2>MACBOOK</h2>
+      </div>
+
+      <div class="content mtop grid">
+        <div class="box">
+          <div class="img">
+            <img src="image/iphone/M20.jpg">
+            <img src="image/iphone/M21.jpg" class="upper-image">
+          </div>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="text">
+            <h3>MacBook M2</h3>
+            <p> <span>2200.000FCFA</span>1800.000FCFA</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/iphone/M23C.jpg">
+            <img src="image/iphone/M23.jpg" class="upper-image">
+          </div>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="text">
+            <h3>MacBook M1</h3>
+            <p> <span>1400.000FCFA</span> 1000.000FCFA</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/iphone/MA23.jpg">
+            <img src="image/iphone/M17C.jpg" class="upper-image">
+          </div>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="text">
+            <h3>MacBook 2018</h3>
+            <p> <span>550.000FCFA </span> 400.000FCFA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="product mtop">
+    <div class="container">
+      <div class="heading heading2">
+        <h3>THE LASTEST</h3>
+        <h2>AIRPOD</h2>
+      </div>
+
+      <div class="content mtop grid">
+        <div class="box">
+          <div class="img">
+            <img src="image/p7.jpg">
+            <img src="image/p8.jpg" class="upper-image">
+          </div>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="text">
+            <h3>AIRPOD Pro class A</h3>
+            <p> <span>210000FCFA</span> 180000FCFA</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/p4.jpg">
+            <img src="image/p8.jpg" class="upper-image">
+          </div>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="text">
+            <h3>AIRPOD Pro class B</h3>
+            <p> <span>30000FCFA</span> 25000FCFA</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/p6.jpg">
+            <img src="image/p7.jpg" class="upper-image">
+          </div>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="text">
+            <h3>AIRPOD Pro class c </h3>
+            <p> <span>20000FCFA</span> 12000FCFA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product mtop">
+    <div class="container">
+      <div class="heading heading2">
+        <h3>THE LASTEST</h3>
+        <h2>ACCESSORIES</h2>
+      </div>
+
+      <div class="content mtop grid">
+        <div class="box">
+          <div class="img">
+            <img src="image/iphone/pwi.jpg">
+            <img src="image/iphone/pwi2.jpg" class="upper-image">
+          </div>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="text">
+            <h3>Apple Cinema 30</h3>
+            <p> <span>30000FCFA</span> 270000FCFA</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/iphone/pw2.jpg">
+            <img src="image/iphone/pw3.jpg" class="upper-image">
+          </div>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="text">
+            <h3>Apple Cinema 30</h3>
+            <p> <span>250000FCFA</span> 15000FCFA</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/iphone/p.jpg">
+            <img src="image/iphone/pi.jpg" class="upper-image">
+          </div>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="text">
+            <h3>Apple Cinema 30</h3>
+            <p> <span>30000FCFA </span> 20000FCFA</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/iphone/CHA.jpg">
+            <img src="image/iphone/CHAD.jpg" class="upper-image">
+          </div>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="text">
+            <h3>Apple Cinema 30</h3>
+            <p> <span>10000FCFA</span> 7000FCFA</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/wf.jpg">
+        
+          </div>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="text">
+            <h3>Apple Cinema 30</h3>
+            <p> <span>20000FCFA</span> 12000FCFA</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="img">
+            <img src="image/cableiphone.jpg">
+         
+          </div>
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="text">
+            <h3>Iphone cable</h3>
+            <p> <span>3500FCFA</span> 2000FCFA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="Services" class="services mtop">
+    <div class="container">
+        <div class="heading heading2">
+            <h3>THE LATEST</h3>
+            <h2>Our Services</h2>
+        </div>
+        <div class="content grid mtop center">
+            <div class="box">
+                <div class="img">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="text">
+                    <h3 style="font-weight: bold; margin-bottom: 10px;">Sales of Phones</h3>
+                    <p>Discover the latest iPhone models and experience Apple technology at its finest.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="text">
+                    <h3 style="font-weight: bold; margin-bottom: 10px;">Unlocking Services:</h3>
+                    <p>Unlock your iPhone safely and securely with our professional services.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <i class="fas fa-headphones"></i>
+                </div>
+                <div class="text">
+                    <h3 style="font-weight: bold; margin-bottom: 10px;">Accessory Sales:</h3>
+                    <p>Enhance your iPhone with our high-quality accessories for protection and personalization.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="img">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <div class="text">
+                    <h3 style="font-weight: bold; margin-bottom: 10px;">Technical Support</h3>
+                    <p>Get expert assistance for any iPhone issues from our experienced technicians.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="customer mtop">
+  <div class="container">
+      <div class="heading heading2">
+          <h3>THE PRODUCTS</h3>
+          <h2>Customer Review</h2>
+      </div>
+      <div class="owl-carousel owl-carousel2 owl-theme mtop">
+          <div class="item">
+              <div class="box flex">
+                  <div class="image">
+                      <div class="img">
+                          <img src="mage/t1.png" alt="">
+                      </div>
+                  </div>
+                  <div class="text">
+                      <p>Great selection of iPhones, I found exactly what I was looking for.</p> </div>
+              </div>
+              <h1>Somsi Vanessa <span></span></h1>
+          </div>
+          <div class="item">
+              <div class="box flex">
+                  <div class="image">
+                      <div class="img">
+                          <img src="image/t.png" alt="">
+                      </div>
+                  </div>
+                  <div class="text">
+                      <p>Unlock your iPhone safely and securely with our professional services.</p>
+                  </div>
+              </div>
+              <h1>Luies Charls <span></span></h1>
+          </div>
+          <div class="item">
+              <div class="box flex">
+                  <div class="image">
+                      <div class="img">
+                          <img src="imge/t1.png" alt="">
+                      </div>
+                  </div>
+                  <div class="text">
+                      <p>Super impressed with the quality of the accessories, definitely worth it</p></div>
+              </div>
+              <h1>Kayo Idriss <span></span></h1>
+          </div>
+          <div class="item">
+              <div class="box flex">
+                  <div class="image">
+                      <div class="img">
+                          <img src="image/t2.p" alt="">
+                      </div>
+                  </div>
+                  <div class="text">
+                      <p>Smooth checkout process, received my order quicker than expected</p> </div>
+              </div>
+              <h1>Temfack Lionel <span></span></h1>
+          </div>
+      </div>
+  </div>
+</section>
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 2
+        }
+      }
+    })
+  </script>
+
+
+
+  <script>
+    $('.owl-carousel3').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: false,
+      dots: false,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 4,
+          dots: true
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+  </script>
+
+
+  <footer id="footer">
+    <div class="container mtop grid">
+      <div class="box">
+        <div class="logo">
+          <img src="image/logo.png" alt="">
+        </div>
+        <p>At iPhone Cameroon, our primary objective is  to be the leading provider of Apple devices in Cameroon, offering unparalleled customer service and support.</p>
+
+        <div class="social_media flex">
+         <p></p>
+ 
+        </div>
+      </div>
+
+      <div class="box center">
+        <div class="news_icon">
+          <i class="fas fa-envelope-open-text"></i>
+        </div>
+        <div class="news">
+          <h2>Join Our Newsletter </h2>
+          <p>Enter your email address and recived news.</p>
+          <div class="send flex1">
+            <input type="text" placeholder="Enter Your Email">
+            <span class="fas fa-paper-plane"></span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="box">
+        <div class="input flex">
+          <div class="icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <div class="text">
+            <h3>Contact CM</h3>
+            <label>+237 773 44 054</label>
+          </div>
+        </div>
+        <div class="input flex">
+          <div class="icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="text">
+            <h3>Email</h3>
+            <label>Iphonecm@gmail.com</label>
+          </div>
+        </div>
+        <div class="input flex">
+          <div class="icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="text">
+            <h3>Address</h3>
+            <label>Douala ,Yaounde</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="legal">
+    <div class="container flex1">
+      <label>   <div class="social_media flex">
+        <a href="https://www.facebook.com/IphoneCameroun237?mibextid=rS40aB7S9Ucbxw6v">
+            <img src="https://img.icons8.com/color/48/000000/facebook.png" />
+        </a>
+        <a href="https://www.instagram.com/iphonecameroon?igsh=MTAwZDRiZTQxZ2F2Zw==">
+            <img src="https://img.icons8.com/color/48/000000/instagram-new--v2.png" />
+        </a>
+        <a href="https://twitter.com/home">
+          <img src="https://img.icons8.com/color/48/000000/twitter-squared.png" />
+        </a>
+   
+    </div></label>
+
+    
+    </div>
+  </div>
+
+
+</body>
+
+</html>
